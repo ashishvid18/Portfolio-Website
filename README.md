@@ -23,19 +23,15 @@ Build your own version — don’t just copy.
 
 ---
 
-## 🛠️ Instructions
+## 🛠️ Performance & Smooth Scrolling
 
-I have modified the GSAP Club plugins using trial versions.  
-⚠️ Note: Trial plugins cannot be used for production or hosting.
-
-For official GSAP Club plugins, refer here:  
-https://gsap.com/docs/v3/Installation/
+This project uses **Lenis** for smooth scrolling and custom high-performance animations. It is fully optimized for production and does not require any paid GSAP plugins.
 
 ---
 
 ## ⚙️ Tech Stack
 
-React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
+React • TypeScript • GSAP • Lenis • Three.js • WebGL • HTML • CSS • JavaScript
 
 ---
 
