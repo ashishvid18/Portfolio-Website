@@ -1,10 +1,10 @@
-import { SplitText } from "gsap-trial/SplitText";
+import { CustomSplitText as SplitText } from "./customSplitText";
 import gsap from "gsap";
 import { smoother } from "../Navbar";
 
 export function initialFX() {
   document.body.style.overflowY = "auto";
-  smoother.paused(false);
+  if (smoother) smoother.start();
   document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {
     backgroundColor: "#0b080c",
@@ -80,7 +80,7 @@ export function initialFX() {
   LoopText(landingText4, landingText5);
 }
 
-function LoopText(Text1: SplitText, Text2: SplitText) {
+function LoopText(Text1: any, Text2: any) {
   var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
   const delay = 4;
   const delay2 = delay * 2 + 1;
