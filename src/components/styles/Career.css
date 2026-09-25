@@ -1,0 +1,15 @@
+.proof-section { width: var(--cWidth); max-width: var(--cMaxWidth); margin: auto; padding: 110px 0 150px; }
+.proof-heading { display: grid; grid-template-columns: 25% 1fr; gap: 6%; margin-bottom: 75px; }
+.proof-list { border-top: 1px solid var(--line); }
+.proof-row { display: grid; grid-template-columns: 70px 150px 1fr; gap: 25px; padding: 30px 0; border-bottom: 1px solid var(--line); align-items: start; }
+.proof-number { font: 400 10px "DM Mono", monospace; color: var(--accentColor); }
+.proof-label { font: 400 10px "DM Mono", monospace; text-transform: uppercase; color: #77717c; letter-spacing: .1em; }
+.proof-row h3 { margin: 0 0 9px; font-size: 22px; font-weight: 600; }
+.proof-row p { margin: 0; color: #8f8994; font-size: 13px; line-height: 1.7; max-width: 650px; }
+@media (max-width: 800px) {
+  .proof-section { padding: 70px 0 100px; }
+  .proof-heading { grid-template-columns: 1fr; gap: 30px; }
+  .proof-row { grid-template-columns: 35px 1fr; gap: 15px; }
+  .proof-label { grid-column: 2; }
+  .proof-row > div { grid-column: 2; }
+}

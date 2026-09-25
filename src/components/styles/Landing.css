@@ -1,0 +1,123 @@
+.landing-section {
+  min-height: 100vh;
+  min-height: 100svh;
+  position: relative;
+  overflow: hidden;
+}
+.landing-container {
+  width: var(--cWidth);
+  min-height: 100vh;
+  min-height: 100svh;
+  max-width: var(--cMaxWidth);
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.landing-copy {
+  width: min(58%, 760px);
+  position: relative;
+  z-index: 20;
+  padding-top: 40px;
+}
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #c9c4cf;
+  font: 400 11px/1 "DM Mono", monospace;
+  margin-bottom: 28px;
+}
+.availability-dot, .contact-availability span, .nav-status i {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #77e2a8;
+  box-shadow: 0 0 14px rgba(119,226,168,.75);
+}
+.eyebrow { font: 400 11px/1 "DM Mono", monospace; letter-spacing: .18em; color: #8e8995; margin: 0 0 18px; }
+.landing-copy h1 {
+  margin: 0;
+  max-width: 900px;
+  font-size: clamp(50px, 6.2vw, 100px);
+  line-height: .98;
+  letter-spacing: -.055em;
+  font-weight: 700;
+}
+.landing-copy h1 span { color: var(--accentColor); }
+.landing-description {
+  max-width: 590px;
+  color: #aaa5b0;
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 1.65;
+  margin: 28px 0 30px;
+}
+.landing-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.primary-cta, .secondary-cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 18px; border-radius: 999px;
+  font-size: 13px; font-weight: 700; transition: .25s ease;
+}
+.primary-cta { background: #f4f1f6; color: #08070a; }
+.primary-cta:hover { color: #08070a; transform: translateY(-2px); }
+.secondary-cta { border: 1px solid var(--line); color: #d7d2dc; }
+.secondary-cta:hover { border-color: rgba(194,164,255,.55); color: #f4f1f6; }
+.landing-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px; }
+.landing-tags span, .project-tags span, .service-tags span {
+  padding: 7px 10px; border: 1px solid var(--line);
+  border-radius: 999px; color: #aaa5b0; font: 400 10px/1 "DM Mono", monospace;
+}
+.landing-visual {
+  position: absolute; inset: 0 0 0 46%;
+  z-index: 2; pointer-events: none;
+}
+.visual-ring {
+  position: absolute; border-radius: 50%; left: 54%; top: 50%;
+  transform: translate(-50%, -50%); border: 1px solid rgba(194,164,255,.14);
+}
+.visual-ring-one { width: min(44vw, 650px); height: min(44vw, 650px); }
+.visual-ring-two { width: min(29vw, 430px); height: min(29vw, 430px); border-color: rgba(255,122,69,.14); }
+.landing-glow { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
+.landing-glow-one { width: 380px; height: 380px; left: 52%; top: 15%; background: rgba(105,64,255,.15); }
+.landing-glow-two { width: 260px; height: 260px; right: -80px; bottom: 5%; background: rgba(255,122,69,.09); }
+.landing-scroll {
+  position: absolute; left: 0; bottom: 34px; display: flex; align-items: center;
+  gap: 12px; color: #716c76; font: 400 10px "DM Mono", monospace;
+  text-transform: uppercase; letter-spacing: .12em;
+}
+.scroll-line { width: 45px; height: 1px; background: #716c76; }
+.character-model {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100vh !important;
+  height: 100svh !important;
+  max-width: 800px !important;
+  max-height: none !important;
+  left: 52% !important;
+  bottom: 0 !important;
+  transform: translateX(-50%) !important;
+  z-index: 5 !important;
+}
+.character-model canvas { width: 100% !important; height: 100% !important; }
+@media (max-width: 1024px) {
+  .landing-container { padding-top: 110px; padding-bottom: 70px; align-items: flex-start; }
+  .landing-copy { width: 100%; }
+  .landing-visual { position: relative; inset: auto; height: 420px; width: 100%; order: 2; margin-top: 30px; }
+  .landing-container { flex-direction: column; }
+  .landing-copy { order: 1; }
+  .landing-scroll { display: none; }
+  .visual-ring-one { width: 390px; height: 390px; left: 50%; }
+  .visual-ring-two { width: 260px; height: 260px; left: 50%; }
+  .character-model { position: absolute !important; height: 520px !important; width: 100% !important; left: 50% !important; }
+}
+@media (max-width: 600px) {
+  .landing-container { padding-top: 92px; }
+  .availability { margin-bottom: 20px; }
+  .landing-copy h1 { font-size: clamp(44px, 14vw, 66px); }
+  .landing-description { font-size: 15px; }
+  .landing-visual { height: 330px; margin-top: 5px; }
+  .character-model { height: 390px !important; }
+  .visual-ring-one { width: 290px; height: 290px; }
+  .visual-ring-two { width: 200px; height: 200px; }
+}
