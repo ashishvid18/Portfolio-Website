@@ -30,3 +30,14 @@
   .project-form button { grid-column: auto; }
   .contact-section footer { flex-direction: column; gap: 10px; margin-top: 80px; }
 }
+/* Keep contact information above the decorative 3D character */
+.contact-side {
+  position: relative;
+  z-index: 30;
+}
+.contact-links,
+.contact-links a,
+.contact-availability {
+  position: relative;
+  z-index: 31;
+}

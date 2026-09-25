@@ -52,7 +52,7 @@ const Navbar = () => {
     <>
       <header className="header">
         <a href="#home" className="navbar-title" data-cursor="disable">
-          AV<span>.</span>
+          Ashish Vidyarthi
         </a>
 
         <div className="navbar-center">
@@ -72,3 +72,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

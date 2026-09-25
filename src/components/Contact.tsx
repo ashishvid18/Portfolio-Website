@@ -88,7 +88,7 @@ const Contact = () => {
             <a href="https://github.com/ashishvid18" target="_blank" rel="noreferrer" data-cursor="disable">
               GitHub <MdArrowOutward />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" data-cursor="disable">
+            <a href="https://www.linkedin.com/in/ashish-vidyarthi-5b05b6282" target="_blank" rel="noreferrer" data-cursor="disable">
               LinkedIn <MdArrowOutward />
             </a>
           </div>
@@ -109,3 +109,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
